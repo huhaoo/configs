@@ -51,7 +51,7 @@ map <C-z> u
 imap <C-z> <Esc>u
 map <C-y> <C-r>
 imap <C-y> <Esc><C-r>
-map <C-s> :w<CR>
+map <C-s> :w!<CR>
 imap <C-s> <Esc><C-s>
 
 func Cppinit() 
