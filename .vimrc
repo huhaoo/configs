@@ -1,4 +1,5 @@
-set whichwrap=h,l,b,s,<,>,[,]
+set whichwrap+=h,l,b,s,<,>,[,]
+set nocp
 set number
 set nocompatible
 syntax on
@@ -13,7 +14,7 @@ set tabstop=4
 set shiftwidth=4
 set relativenumber
 set cursorline
-set wrap
+set wrap   
 set linebreak
 set wrapmargin=2
 set scrolloff=5
@@ -88,15 +89,20 @@ func Cppinit()
 	call append(line(".")+29,"}")
 endfunc
 
+function CurDir()
+	let curdir = substitute(getcwd(), $HOME, "~", "g")
+	return curdir
+endfunc
+set statusline=[%n]\ %f%m%r%h\ \|\ \ pwd:\ %{CurDir()}\ \ %=\ Line:%l/%L\(%3p%%)\ ,\ Column:%c\ 
 map <F8> :call Cppinit()<CR>
 imap <F8> <esc><F8>
 map <C-d> :color morning<CR>
 imap <C-d> <Esc><C-d>
 map <C-p> :color default<CR>
-imap <C-p> <Esc><C-p> 
-map <C-a> ggvG<Home>
-imap <C-a> <Esc>ggvG<Home>
-map <C-S-F9> :!google-chrome %<CR>
+imap <C-p> <Esc><C-p>
+map <C-a> ggvG1000l<Home>
+imap <C-a> <Esc><C-a><Home>
+map <C-S-F9> :!google-chrome %:p<CR>
 imap <C-S-F9> <ESC><C-S-F9>
 set nocompatible              " be iMproved, required
 filetype off                  " required
