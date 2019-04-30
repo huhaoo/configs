@@ -54,10 +54,10 @@ func Run()
 	if &filetype == "html" 
 		exec "!google-chrome %:p"
 	endif
-	if &filetype == "md"
+	if &filetype == "markdown"
 		exec "!google-chrome %:p"
 	endif
-	if &filetype == "py"
+	if &filetype == "python"
 		exec "!python %"
 	endif
 endfunc
