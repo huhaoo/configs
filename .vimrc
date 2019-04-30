@@ -38,20 +38,57 @@ set history=1000
 set autoread
 set wildmenu
 set wildmode=longest:list,full
-map <F9> :w!<CR>:!g++ % -o %< -O2 -std=c++11 -Wall <CR>
+
+func Compile()
+	exec "w!"
+	if &filetype == "cpp"
+		exec "!g++ % -o %< -O2 -std=c++11 -Wall"
+	endif
+endfunc
+
+func Run()
+	exec "w!"
+	if &filetype == "cpp"
+		exec "!./%<"
+	endif
+	if &filetype == "html" 
+		exec "!google-chrome %:p"
+	endif
+	if &filetype == "md"
+		exec "!google-chrome %:p"
+	endif
+	if &filetype == "py"
+		exec "!python %"
+	endif
+endfunc
+
+func Rmexe()
+	exec "! rm %<"
+endfunc
+map <F9> :call Compile()<CR>
 imap <F9> <Esc><F9>
-map <C-F9> :!./%< <CR>
-imap <C-F9> <Esc><F10>
+
+map <C-F9> :call Run() <CR>
+imap <C-F9> <Esc><C-F9>
+
+map <C-S-F9> :call Rmexe() <CR>
+imap <C-S-F9> <Esc><C-S-F9>
+
 map <C-c> "+y
 imap <C-c> <Esc>"+y
+
 map <C-x> "+d
 imap <C-x> <Esc>"+d
+
 map <C-v> "+p
 imap <C-v> <Esc>"+p
+
 map <C-z> u
 imap <C-z> <Esc>u
+
 map <C-y> <C-r>
 imap <C-y> <Esc><C-r>
+
 map <C-s> :w!<CR>
 imap <C-s> <Esc><C-s>
 
@@ -100,10 +137,8 @@ map <C-d> :color morning<CR>
 imap <C-d> <Esc><C-d>
 map <C-p> :color default<CR>
 imap <C-p> <Esc><C-p>
-map <C-a> ggvG1000l<Home>
-imap <C-a> <Esc><C-a><Home>
-map <C-S-F9> :!google-chrome %:p<CR>
-imap <C-S-F9> <ESC><C-S-F9>
+map <C-a> ggvG<End>
+imap <C-a> <Esc><C-a><End>
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
