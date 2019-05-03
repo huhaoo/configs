@@ -46,6 +46,7 @@ chmod +x install.sh
 cd ..
 wget http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/deepin.com.qq.im_8.9.19983deepin23_i386.deb
 sudo dpkg -i deepin.com.qq.im_8.9.19983deepin23_i386.deb
+rm deepin.com.qq.im_8.9.19983deepin23_i386.deb
 
 sudo apt-get install gnome-tweak-tool
 sudo apt-get install gnome-shell-extensions
