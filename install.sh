@@ -27,6 +27,10 @@ sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
 sudo apt-get install typora
 
+wget http://www.geogebra.net/linux/pool/main/g/geogebra-classic/geogebra-classic_6.0.535.0-201904221109_amd64.deb
+sudo dpkg -i geogebra-classic_6.0.535.0-201904221109_amd64.deb
+rm geogebra-classic_6.0.535.0-201904221109_amd64.deb
+
 sudo apt install sl
 sudo apt install fortune
 sudo apt install figlet
