@@ -4,10 +4,6 @@ sudo apt install git
 sudo apt install g++
 sudo apt install clang
 
-wget https://vscode.cdn.azure.cn/stable/51b0b28134d51361cf996d2f0a1c698247aeabd8/code_1.33.1-1554971066_amd64.deb
-sudo dpkg -i code_1.33.1-1554971066_amd64.deb
-rm code_1.33.1-1554971066_amd64.deb
-
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt remove firefox
