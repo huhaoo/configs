@@ -47,3 +47,9 @@ rm deepin.com.qq.im_8.9.19983deepin23_i386.deb
 sudo apt-get install gnome-tweak-tool
 sudo apt-get install gnome-shell-extensions
 google-chrome https://www.cnblogs.com/feipeng8848/p/8970556.html
+
+clear
+toilet -f mono9 Let\'s
+toilet -f mono9 celebrate
+toilet -f mono9 that
+toilet -f mono9 --gay LK ak IOI!
