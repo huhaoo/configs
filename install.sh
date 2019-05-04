@@ -51,6 +51,16 @@ gcc watcher_unix.c -o watcher_unix -O2
 gcc realjudge.c -o realjudge_linux -O2
 qmake lemon.pro
 make
+cd ~
+touch ~/.local/share/applications/lemon.desktop
+chmod 777 ~/.local/share/applications/lemon.desktop
+echo>>~/.local/share/applications/lemon.desktop "[Desktop Entry]"
+echo>>~/.local/share/applications/lemon.desktop "Type=Application"
+echo>>~/.local/share/applications/lemon.desktop "Terminal=false"
+echo>>~/.local/share/applications/lemon.desktop "Exec=/home/$USER/lemon/lemon"
+echo>>~/.local/share/applications/lemon.desktop "Name=lemon"
+echo>>~/.local/share/applications/lemon.desktop "Comment=lemon"
+echo>>~/.local/share/applications/lemon.desktop "Icon=/home/$USER/lemon/icon.ico"
 
 cd ~
 clear
