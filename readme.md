@@ -6,4 +6,4 @@ chmod +x install.sh
 ./install.sh
 ```
 
-如果`apt ...`出现错误，使用`sudo apt --fix-broken install`
+如果`apt install`出现错误，使用`sudo apt --fix-broken install`然后重试
