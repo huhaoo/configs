@@ -63,6 +63,10 @@ echo>>~/.local/share/applications/lemon.desktop "Comment=lemon"
 echo>>~/.local/share/applications/lemon.desktop "Icon=/home/$USER/lemon/icon.ico"
 
 cd ~
+sudo apt install npm
+sudo npm install hexo-cli -g
+
+cd ~
 clear
 toilet -f mono9 Let\'s
 toilet -f mono9 celebrate
