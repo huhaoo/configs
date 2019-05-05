@@ -16,7 +16,7 @@ sudo apt install gnuchess
 sudo apt install greed
 sudo apt install gnome-tweak-tool
 sudo apt install gnome-shell-extensions
-sudo apt install kate
+sudo apt install kolourpaint4
 
 cd ~
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
