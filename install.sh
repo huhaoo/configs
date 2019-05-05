@@ -1,7 +1,21 @@
 cd ~
-sudo apt install git g++ gcc qt5-default make clang zsh vim sl fortune figlet toilet gungo gnuchess greed gnome-tweak-tool gnome-shell-extensions
-sudo apt --fix-broken install
-sudo apt install git g++ gcc qt5-default make clang zsh vim sl fortune figlet toilet gungo gnuchess greed gnome-tweak-tool gnome-shell-extensions
+sudo apt install git
+sudo apt install g++
+sudo apt install gcc
+sudo apt install qt5-default
+sudo apt install make
+sudo apt install clang
+sudo apt install zsh
+sudo apt install vim
+sudo apt install sl
+sudo apt install fortune
+sudo apt install figlet
+sudo apt install toilet
+sudo apt install gnugo
+sudo apt install gnuchess
+sudo apt install greed
+sudo apt install gnome-tweak-tool
+sudo apt install gnome-shell-extensions
 
 cd ~
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
