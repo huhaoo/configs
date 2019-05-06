@@ -1,3 +1,4 @@
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -63,7 +64,6 @@ ZSH_THEME="ys"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  wd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,16 +97,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-wd() {
-  . /home/huhao/bin/wd/wd.sh
-}
-source /home/huhao/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/huhao/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #set oracle jdk environment
-export JAVA_HOME=/usr/lib/jvm/jdk-11.0.1  ## 这里要注意目录要换成自己解压的jdk 目录
+export JAVA_HOME=/usr/lib/jvm/jdk-11.0.1
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 stty -ixon
+export MANPATH=${MANPATH}:/usr/local/texlive/2018/texmf-dist/doc/man
+export INFOPATH=${INFOPATH}:/usr/local/texlive/2018/texmf-dist/doc/info
+export PATH=${PATH}:/usr/local/texlive/2018/bin/x86_64-linux
+source /home/huhao/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
