@@ -24,7 +24,6 @@ sudo apt install gnome-tweak-tool
 sudo apt install gnome-shell-extensions
 sudo apt install kolourpaint4
 sudo apt install typora
-sudo mv /etc/apt/sources.list.bak /etc/apt/sources.list
 
 cd ~
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
