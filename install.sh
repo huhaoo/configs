@@ -45,21 +45,6 @@ cp configs/.vimrc .vimrc
 vim +PluginInstall +qall
 
 cd ~
-wget http://www.geogebra.net/linux/pool/main/g/geogebra-classic/geogebra-classic_6.0.535.0-201904221109_amd64.deb
-sudo dpkg -i geogebra-classic_6.0.535.0-201904221109_amd64.deb
-rm geogebra-classic_6.0.535.0-201904221109_amd64.deb
-
-cd ~
-git clone https://github.com/wszqkzqk/deepin-wine-ubuntu.git qqinstall/
-cd qqinstall
-chmod +x install.sh
-./install.sh
-cd ..
-wget http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/deepin.com.qq.im_8.9.19983deepin23_i386.deb
-sudo dpkg -i deepin.com.qq.im_8.9.19983deepin23_i386.deb
-rm deepin.com.qq.im_8.9.19983deepin23_i386.deb
-
-cd ~
 git clone https://github.com/Dust1404/Project_LemonPlus.git
 mv Project_LemonPlus lemon
 cd lemon
