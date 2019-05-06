@@ -3,7 +3,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/huhao/.oh-my-zsh"
+  export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /home/huhao/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/$USER/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #set oracle jdk environment
 export JAVA_HOME=/usr/lib/jvm/jdk-11.0.1
 export JRE_HOME=${JAVA_HOME}/jre
@@ -109,4 +109,4 @@ stty -ixon
 export MANPATH=${MANPATH}:/usr/local/texlive/2018/texmf-dist/doc/man
 export INFOPATH=${INFOPATH}:/usr/local/texlive/2018/texmf-dist/doc/info
 export PATH=${PATH}:/usr/local/texlive/2018/bin/x86_64-linux
-source /home/huhao/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/$USER/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
