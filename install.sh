@@ -1,4 +1,5 @@
 cd ~
+sudo apt update
 sudo apt install git
 git clone https://github.com/huhaoo/configs.git
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
