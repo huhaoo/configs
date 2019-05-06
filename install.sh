@@ -1,5 +1,8 @@
 cd ~
 sudo apt install git
+git clone https://github.com/huhaoo/configs.git
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo cp configs/source.list /etc/apt/sources.list
 sudo apt install g++
 sudo apt install gcc
 sudo apt install qt5-default
@@ -17,6 +20,8 @@ sudo apt install greed
 sudo apt install gnome-tweak-tool
 sudo apt install gnome-shell-extensions
 sudo apt install kolourpaint4
+sudo apt install typora
+sudo mv /etc/apt/sources.list.bak /etc/apt/sources.list
 
 cd ~
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -30,19 +35,12 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 cd ~
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-git clone https://github.com/huhaoo/configs.git
 cp configs/.zshrc .zshrc
 
 cd ~
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp configs/.vimrc .vimrc
 vim +PluginInstall +qall
-
-cd ~
-wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
-sudo add-apt-repository 'deb https://typora.io/linux ./'
-sudo apt-get update
-sudo apt-get install typora
 
 cd ~
 wget http://www.geogebra.net/linux/pool/main/g/geogebra-classic/geogebra-classic_6.0.535.0-201904221109_amd64.deb
