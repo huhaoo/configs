@@ -2,6 +2,7 @@ cd ~
 sudo apt update
 sudo apt install git
 git clone https://github.com/huhaoo/configs.git
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp configs/source.list /etc/apt/sources.list
 sudo apt update
