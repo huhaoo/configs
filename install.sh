@@ -23,6 +23,7 @@ sudo apt install greed
 sudo apt install gnome-tweak-tool
 sudo apt install gnome-shell-extensions
 sudo apt install kolourpaint4
+sudo apt install python
 sudo apt install typora
 
 cd ~
