@@ -20,6 +20,7 @@ sudo apt install figlet
 sudo apt install toilet
 sudo apt install gnugo
 sudo apt install gnuchess
+sudo apt install vim-gnome
 sudo apt install greed
 sudo apt install gnome-tweak-tool
 sudo apt install gnome-shell-extensions
