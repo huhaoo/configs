@@ -1,3 +1,5 @@
+## 请仔细看下方说明，有BUG提出issue（目前只接受18.04）
+
 下载我的linux配置
 
 ```sh
@@ -7,3 +9,7 @@ chmod +x install.sh
 ```
 
 如果`apt install`出现错误，使用`sudo apt --fix-broken install`然后重试
+
+如果（应该会）中途进入zsh，请手工输入`exit`
+
+所有询问输入`Y`或其它**肯定**选项
