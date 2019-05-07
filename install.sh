@@ -7,6 +7,7 @@ sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp configs/source.list /etc/apt/sources.list
 sudo apt update
 sudo apt install g++
+sudo apt install filezilla
 sudo apt install gcc
 sudo apt install qt5-default
 sudo apt install make
