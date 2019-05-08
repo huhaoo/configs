@@ -9,4 +9,5 @@ sudo apt install gnome-shell-extensions
 sudo apt install curl
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python get-pip.py
-pip install opencv-python
+sudo pip install cyaron
+sudo pip install opencv-python
