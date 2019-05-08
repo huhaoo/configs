@@ -8,5 +8,6 @@ sudo apt install gnome-tweak-tool
 sudo apt install gnome-shell-extensions
 sudo apt install curl
 sudo apt install python-pip
+sudo apt install python3-pip
 sudo pip install cyaron
 sudo pip install opencv-python
