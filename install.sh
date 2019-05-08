@@ -15,15 +15,9 @@ sudo apt install clang
 sudo apt install zsh
 sudo apt install vim
 sudo apt install sl
-sudo apt install fortune
 sudo apt install figlet
 sudo apt install toilet
-sudo apt install gnugo
-sudo apt install gnuchess
 sudo apt install vim-gnome
-sudo apt install greed
-sudo apt install gnome-tweak-tool
-sudo apt install gnome-shell-extensions
 sudo apt install kolourpaint4
 sudo apt install python
 sudo apt install typora
