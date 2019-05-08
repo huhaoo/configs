@@ -8,6 +8,14 @@ chmod +x install.sh
 ./install.sh
 ```
 
+如果有需要，可以把`ex`版也装了
+
+```sh
+wget https://raw.githubusercontent.com/huhaoo/configs/master/exinstall.sh
+chmod +x exinstall.sh
+./exinstall.sh
+```
+
 如果`apt install`出现错误，使用`sudo apt --fix-broken install`然后重试
 
 如果（应该会）中途进入zsh，请手工输入`exit`
