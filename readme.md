@@ -8,7 +8,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-如果有需要，可以把`ex`版也装了
+如果`install.sh`里面只有编程必备的，建议在**装完**`install.sh`后安装`ex`版
 
 ```sh
 wget https://raw.githubusercontent.com/huhaoo/configs/master/exinstall.sh
