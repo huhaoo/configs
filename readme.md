@@ -1,6 +1,6 @@
 ## 请仔细看下方说明，有BUG提出issue（目前只接受18.04）
 
-下载我的linux配置
+按`Ctrl+Alt+T`打开终端后复制下列代码下载我的linux配置
 
 ```sh
 wget https://raw.githubusercontent.com/huhaoo/configs/master/install.sh
