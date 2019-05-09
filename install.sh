@@ -14,8 +14,6 @@ sudo apt install make
 sudo apt install clang
 sudo apt install zsh
 sudo apt install vim
-sudo apt install sl
-sudo apt install figlet
 sudo apt install toilet
 sudo apt install vim-gnome
 sudo apt install kolourpaint4
@@ -57,10 +55,6 @@ echo>>~/.local/share/applications/lemon.desktop "Exec=/home/$USER/lemon/lemon"
 echo>>~/.local/share/applications/lemon.desktop "Name=lemon"
 echo>>~/.local/share/applications/lemon.desktop "Comment=lemon"
 echo>>~/.local/share/applications/lemon.desktop "Icon=/home/$USER/lemon/icon.ico"
-
-cd ~
-sudo apt install npm
-sudo npm install hexo-cli -g
 
 cd ~
 clear
