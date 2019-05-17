@@ -11,6 +11,7 @@ sudo apt install python-pip
 sudo apt install python3-pip
 sudo pip install cyaron
 sudo pip install opencv-python
+sudo pip install mkdocs
 sudo apt install gnuplot
 sudo apt install sl
 sudo apt install figlet
