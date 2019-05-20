@@ -17,3 +17,4 @@ sudo apt install sl
 sudo apt install figlet
 sudo apt install npm
 sudo npm install hexo-cli -g
+sudo apt install xtrlock
