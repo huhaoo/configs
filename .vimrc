@@ -47,9 +47,8 @@ func Compile()
 endfunc
 
 func Run()
-	exec "w!"
 	if &filetype == "cpp"
-		exec "!./%<"
+		exec "!time ./%<"
 	endif
 	if &filetype == "html" 
 		exec "!google-chrome %:p"
@@ -147,6 +146,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'wakatime/vim-wakatime'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " Brief help
