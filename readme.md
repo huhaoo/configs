@@ -3,17 +3,17 @@
 按`Ctrl+Alt+T`打开终端后复制下列代码下载我的linux配置
 
 ```sh
-wget https://raw.githubusercontent.com/huhaoo/configs/master/install.sh
-chmod +x install.sh
-./install.sh
+wget https://raw.githubusercontent.com/huhaoo/configs/master/ins.sh
+chmod +x ins.sh
+./ins.sh
 ```
 
-如果`install.sh`里面只有编程必备的，建议在**装完**`install.sh`后安装`ex`版
+如果`ins.sh`里面只有编程必备的，建议在**装完**`ins.sh`后安装`ex`版
 
 ```sh
-wget https://raw.githubusercontent.com/huhaoo/configs/master/exinstall.sh
-chmod +x exinstall.sh
-./exinstall.sh
+wget https://raw.githubusercontent.com/huhaoo/configs/master/exins.sh
+chmod +x exins.sh
+./exins.sh
 ```
 
 如果`apt install`出现错误，使用`sudo apt --fix-broken install`然后重试
