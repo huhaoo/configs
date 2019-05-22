@@ -18,3 +18,6 @@ sudo apt install figlet
 sudo apt install npm
 sudo npm install hexo-cli -g
 sudo apt install xtrlock
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt-get update
+sudo apt-get install peek
