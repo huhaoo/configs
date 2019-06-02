@@ -21,3 +21,4 @@ sudo apt install xtrlock
 sudo add-apt-repository ppa:peek-developers/stable
 sudo apt-get update
 sudo apt-get install peek
+sudo apt-get install w3m
