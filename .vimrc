@@ -38,6 +38,9 @@ set history=1000
 set autoread
 set wildmenu
 set wildmode=longest:list,full
+set path+=/usr/include/c++/7/
+set path+=/usr/include/python2.6
+set path+=/usr/include
 
 func Compile()
 	exec "w!"
@@ -47,6 +50,7 @@ func Compile()
 endfunc
 
 func Run()
+	exec "w!"
 	if &filetype == "cpp"
 		exec "!time ./%<"
 	endif
@@ -73,11 +77,11 @@ imap <C-F9> <Esc><C-F9>
 map <C-S-F9> :call Rmexe() <CR>
 imap <C-S-F9> <Esc><C-S-F9>
 
+map <C-F10> :!g++ % grader.cpp -o %< -O2 -std=c++11 -Wall <CR>
+imap <C-F10> <Esc><C-F10>
+
 map <C-c> "+y
 imap <C-c> <Esc>"+y
-
-map <C-x> "+d
-imap <C-x> <Esc>"+d
 
 map <C-v> "+p
 imap <C-v> <Esc>"+p
@@ -90,6 +94,13 @@ imap <C-y> <Esc><C-r>
 
 map <C-s> :w!<CR>
 imap <C-s> <Esc><C-s>
+
+map <C-t> "+d
+imap <C-t> <Esc>"+d
+
+imap <C-n> <C-x><C-i>
+
+iab instime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 
 func Cppinit() 
 	call setline(1,          "/***************************************************************")   
