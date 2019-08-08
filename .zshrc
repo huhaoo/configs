@@ -111,3 +111,5 @@ export INFOPATH=${INFOPATH}:/usr/local/texlive/2018/texmf-dist/doc/info
 export PATH=${PATH}:/usr/local/texlive/2018/bin/x86_64-linux
 
 ulimit -s 524288
+
+alias showsummary="vim ~/blog/source/a80da1282f2c775bbc5f2c92c836968b/index.md"
