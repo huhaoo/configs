@@ -68,6 +68,14 @@ endfunc
 func Rmexe()
 	exec "! rm %<"
 endfunc
+
+func Repeatrun()
+	exec "w!"
+	for i in range(1,5)
+		exec "!./%<"
+	endfor
+endfunc
+
 map <F9> :call Compile()<CR>
 imap <F9> <Esc><F9>
 
@@ -76,6 +84,9 @@ imap <C-F9> <Esc><C-F9>
 
 map <C-S-F9> :call Rmexe() <CR>
 imap <C-S-F9> <Esc><C-S-F9>
+
+map <C-S-F10> :call Repeatrun() <CR>
+imap <C-S-F10> <Esc><C-F10>
 
 map <C-F10> :!g++ % grader.cpp -o %< -O2 -std=c++11 -Wall <CR>
 imap <C-F10> <Esc><C-F10>
@@ -100,7 +111,9 @@ imap <C-t> <Esc>"+d
 
 imap <C-n> <C-x><C-i>
 
-iab instime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
+iab floor <c-r>="\\lfloor\\rfloor"<cr>
+iab bmatrix <c-r>="\\begin\{bmatrix\}\\end\{bmatrix\}"<cr>
+iab align <c-r>="\\begin\{align\}\n\\end\{align\}"<cr>
 
 func Cppinit() 
 	call setline(1,          "/***************************************************************")   
